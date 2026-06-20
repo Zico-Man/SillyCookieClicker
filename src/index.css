@@ -1,0 +1,24 @@
+html ,body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url('./assets/cursor.png'), auto;
+  background-color: #0e0e0e;
+  overflow: hidden;
+}
+
+html {
+    cursor: url('./assets/cursor.png'), auto;
+}
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'CustomFont', sans-serif;
+}
+

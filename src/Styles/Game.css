@@ -1,0 +1,157 @@
+body {
+    overflow: hidden;
+}
+
+.Page {
+    background: linear-gradient(65deg, #bad5fc 0%, #ffffff 100%);
+    width: 100%;
+    height: 100vh;
+}
+
+.Top-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 12px 10px #0000004a;
+}
+
+.Top-Section h2 {
+    font-size: 1.5em;
+    transition: transform 0.5s ease;
+}
+
+.temp {
+    transition: transform 0.5s ease;
+}
+
+.InfBox {
+    position: absolute;
+    /*transform: translateY(-500px);*/
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
+}
+
+.Middle-Part {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    height: fit-content;
+    transform: translateY(100px);
+}
+
+@media (max-width: 500px) {
+    .Middle-Part {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        width: 100%;
+        height: fit-content;
+        transform: translateY(100px);
+    }
+}
+
+.Middle-Part img {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    animation: Slow_Rotation 30s infinite linear;
+    transition: transform 200ms
+        linear(
+            0,
+            0.291 2.7%,
+            0.544 5.5%,
+            0.761 8.4%,
+            0.947 11.5%,
+            1.027 13.1%,
+            1.096 14.7%,
+            1.16 16.4%,
+            1.213 18.1%,
+            1.26 19.9%,
+            1.298 21.7%,
+            1.329 23.6%,
+            1.352 25.5%,
+            1.363 26.8%,
+            1.372 28.2%,
+            1.377 29.6%,
+            1.379 31.1%,
+            1.378 32.6%,
+            1.374 34.2%,
+            1.367 35.9%,
+            1.357 37.6%,
+            1.337 40.4%,
+            1.307 43.7%,
+            1.176 56.1%,
+            1.121 61.8%,
+            1.096 64.8%,
+            1.074 67.8%,
+            1.056 70.7%,
+            1.04 73.7%,
+            1.029 76.3%,
+            1.02 79%,
+            1.013 81.8%,
+            1.007 84.7%,
+            1.001 91%,
+            1
+        );
+}
+
+@keyframes Slow_Rotation {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.FinishedBox {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.FinishedDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    height: fit-content;
+    padding: 20px 20px;
+    flex-direction: column;
+    background: linear-gradient(-45deg, #bad5fc 0%, #ffffff 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 3px rgba(255,255,255, 0.7);
+}
+
+.FinishedDiv img {
+    width: 500px;
+    height: fit-content;
+}
+
+.FinishedDiv h2 {
+    font-size: 2.5em;
+}
+
+.FinishedDiv a {
+    font-size:1.5em;
+    font-weight: 500;
+    padding: 15px 10px;
+    border-radius: 5px;
+    transition: box-shadow 0.25s cubic-bezier(0.8, 0.6, 0.385, 0.12);
+}
+
+.FinishedDiv a:hover {
+    box-shadow: 0 0 5px 5px #000;
+}
